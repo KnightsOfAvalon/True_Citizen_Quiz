@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/us_flag"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/thinking_edit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/thinking_person_description" />
+
+    <TextView
+        android:id="@+id/answer_text_view"
+        android:text="@string/question_declaration"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:orientation="horizontal"
+        android:layout_marginTop="34dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@android:color/white"
+            android:id="@+id/true_button"
+            android:text="@string/true_text"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@android:color/white"
+            android:id="@+id/false_button"
+            android:text="@string/false_text"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/previous_button"
+            android:src="@drawable/back_arrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/previous_button" />
+
+        <ImageButton
+            android:id="@+id/next_button"
+            android:src="@drawable/next_arrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/next_button" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
