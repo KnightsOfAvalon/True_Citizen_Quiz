@@ -17,4 +17,6 @@
     <string name="next_button">Go To Next Question</string>
     <string name="thinking_person_description">thinking person</string>
     <string name="previous_button">Go To Previous Question</string>
+    <string name="question_number_text">Question Number:</string>
+    <string name="question_number">0</string>
 </resources>
